@@ -20,8 +20,9 @@
               </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let todo of todoList">
-            <td>{{todo.id}}</td>
+            <tr *ngFor="let todo of todoList" (click)="selectTodo(todo)"
+            [ngClass] = "{'active' : todo.id == current}">
+           <td>{{todo.id}}</td>
             <td>{{todo.type}}</td>
             <td>{{todo.description}}</td>
             

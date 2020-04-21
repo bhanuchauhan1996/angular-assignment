@@ -8,4 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class Assignment2Component {
 @Input() todoList:Todo[];
+current:any;
+selectTodo(item){
+  this.current=item.id;
+}
 }
