@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Todo } from './../../assignment.component';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-assignment2',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./assignment2.component.css']
 })
 export class Assignment2Component {
-
+@Input() todoList:Todo[];
 }
