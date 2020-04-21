@@ -10,8 +10,8 @@
   <div class="container your-code">
     <form>
       <label for ="Enter Text">Enter Your Text</label><br>
-      <input type="text" name="name" #nameInput placeholder="Enter text here"><br>
-      <button type="button" (click)="handleText(nameInput)" class="btn btn-primary">Show Text</button>
+      <input type="text" name="name" #nameInput placeholder="Enter text here" (input)="handleText(nameInput)"><br>
+      
     </form>
     <div class="row">{{myValue}}</div>
   
